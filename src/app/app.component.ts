@@ -12,10 +12,12 @@ export class AppComponent implements OnInit{
   title = 'tikusdelivery';
   results: any;
   dishes: any;
+
+  isDishes: boolean = true;
+  isRestaurant: boolean = false;
   
   longitude = 38.780127;
   latitude = 9.003869;
-  //restaurantName will be the input value from the search bar
   restaurantName = "";
   pageNumber = 1;
 
@@ -45,6 +47,14 @@ export class AppComponent implements OnInit{
     );
   }
 
+  onClickDishes() {
+    this.isDishes = true;
+    this.isRestaurant = false;
+  }
 
+  onClickRestaurant() {
+    this.isDishes = false;
+    this.isRestaurant = true;
+  }
 
 }
