@@ -41,8 +41,8 @@ export class AppComponent implements OnInit{
 
       //get listDishes from the results object
       this.dishes = data.listDishes;
-      console.log("thsi is returants",this.results);
-      console.log("thsi is dishes",this.dishes);
+      // console.log("thsi is returants",this.results);
+      // console.log("thsi is dishes",this.dishes);
     }
     );
   }
