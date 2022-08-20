@@ -57,4 +57,9 @@ export class AppComponent implements OnInit{
     this.isRestaurant = true;
   }
 
+  onClick(){
+
+    alert("Do Whatever you want");
+  }
+
 }
